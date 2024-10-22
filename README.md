@@ -1,4 +1,4 @@
-# JPMorgan-Chase-Bank-Churn
+# JPMorgan Chase Bank Churn Analysis
 
 ![Thumbnail](presentation/JP-Morgan-Chase.jpeg)
 

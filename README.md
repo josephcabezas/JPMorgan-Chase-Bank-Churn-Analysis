@@ -1,6 +1,6 @@
 # JPMorgan-Chase-Bank-Churn
 
-Thumbnail image
+![Thumbnail](presentation/JP-Morgan-Chase.jpeg)
 
 ## Table of Contents:
 1. [Project Background](#project-background)

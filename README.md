@@ -24,6 +24,10 @@ By identifying these customers early on, JPMorgan can make data-driven decisions
 [Back to Table of Contents](#table-of-contents)
 
 ![tableau](presentation/customer_segmentation_bank_churn.png)
+The data visualization above was created in Tableau. The full interactive dashboard can be found [here](tableau/Customer-Segmentation.twb).
+
+![heatmap](presentation/churn_heatmap.png)
+The data visualization above was created in python. The full notebook and code can be found [here](python/bank_churn.ipynb).
 
 # Building a Model
 [Back to Table of Contents](#table-of-contents)
@@ -32,7 +36,7 @@ By identifying these customers early on, JPMorgan can make data-driven decisions
 
 The feature engineering phase involved developing new variables to better convey the complex customer behaviors and financial patterns that lead to churn. For example, strategic groupings by credit score were created based on risk profiles to more efficiently capture the relationship between credit worthiness and churn probability and dynamic product utilization metrics were employed, such as utilization rates normalized by customer tenure (year-based) and salary-adjusted utilization indicators to account for customer financial capacity. The data preparation phase consisted of: systematic handling of missing values using domain-specific imputation strategies, data encoding frameworks categorical variables to preserve ordinal relationships, and developing reusable data preprocessing functions to ensure pipeline reproducibility.
 
-(img of feature engineering)
+The model was created in python. The full notebook and code can be found [here](python/bank_churn.ipynb).
 
 **Model Development and Selection:**
 
@@ -46,7 +50,7 @@ The project evaluated eight different machine learning algorithms to identify th
 7. Logistic Regression (LOGR)
 8. Classification and Regression Trees (CART)
 
-(img of model performance and code)
+![model](presentation/churn_model_ranking.png)
 
 After rigorous testing, LightGBM emerged as the superior model, demonstrating the highest predictive accuracy, excellent handling of complex feature interactions, superior computational efficiency, and strong resistance to overfitting.
 
@@ -54,16 +58,15 @@ After rigorous testing, LightGBM emerged as the superior model, demonstrating th
 
 The optimization phase encompassed: hyperparameter tuning using cross-validation, development of a confusion matrix to assess prediction accuracy across different customer segments, ROC curve analysis to optimize the trade-off between sensitivity and specificity.
 
-(include img of all the above)
+![img](presentation/churn_confusion_matrix.png)
+
+![img](presentation/churn_roc_curve.png)
 
 **Key Performance Metrics:**
 
 The final model achieved:
 
-AUC-ROC score of [Insert score]
-Precision: [Insert]
-Recall: [Insert]
-F1-Score: [Insert]
+![img](presentation/churn_final_model.png)
 
 These results indicate strong predictive capability across different customer segments, enabling proactive retention strategies for high-risk customers.
 

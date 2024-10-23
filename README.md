@@ -28,6 +28,45 @@ By identifying these customers early on, JPMorgan can make data-driven decisions
 # Building a Model
 [Back to Table of Contents](#table-of-contents)
 
+**Feature Engineering and Data Preparation:**
+
+The feature engineering phase involved developing new variables to better convey the complex customer behaviors and financial patterns that lead to churn. For example, strategic groupings by credit score were created based on risk profiles to more efficiently capture the relationship between credit worthiness and churn probability and dynamic product utilization metrics were employed, such as utilization rates normalized by customer tenure (year-based) and salary-adjusted utilization indicators to account for customer financial capacity. The data preparation phase consisted of: systematic handling of missing values using domain-specific imputation strategies, data encoding frameworks categorical variables to preserve ordinal relationships, and developing reusable data preprocessing functions to ensure pipeline reproducibility.
+
+(img of feature engineering)
+
+**Model Development and Selection:**
+
+The project evaluated eight different machine learning algorithms to identify the optimal approach:
+1. LightGBM
+2. Gradient Boosting Machine (GBM)
+3. CatBoost
+4. Random Forest (RF)
+5. XGBoost
+6. K-Nearest Neighbors (KNN)
+7. Logistic Regression (LOGR)
+8. Classification and Regression Trees (CART)
+
+(img of model performance and code)
+
+After rigorous testing, LightGBM emerged as the superior model, demonstrating the highest predictive accuracy, excellent handling of complex feature interactions, superior computational efficiency, and strong resistance to overfitting.
+
+**Model Optimization and Validation:**
+
+The optimization phase encompassed: hyperparameter tuning using cross-validation, development of a confusion matrix to assess prediction accuracy across different customer segments, ROC curve analysis to optimize the trade-off between sensitivity and specificity.
+
+(include img of all the above)
+
+**Key Performance Metrics:**
+
+The final model achieved:
+
+AUC-ROC score of [Insert score]
+Precision: [Insert]
+Recall: [Insert]
+F1-Score: [Insert]
+
+These results indicate strong predictive capability across different customer segments, enabling proactive retention strategies for high-risk customers.
+
 # Executive Summary
 [Back to Table of Contents](#table-of-contents)
 

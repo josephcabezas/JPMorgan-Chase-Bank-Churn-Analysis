@@ -23,7 +23,7 @@ By identifying these customers early on, JPMorgan can make data-driven decisions
 # Data Visualizations
 [Back to Table of Contents](#table-of-contents)
 
-
+![tableau](presentation/customer_segmentation_bank_churn.png)
 
 # Building a Model
 [Back to Table of Contents](#table-of-contents)

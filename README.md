@@ -1,4 +1,4 @@
-# JPMorgan Chase Bank Churn Analysis
+# JPMorgan Chase Bank Churn ML Model
 
 ![Thumbnail](presentation/JP-Morgan-Chase.jpeg)
 
